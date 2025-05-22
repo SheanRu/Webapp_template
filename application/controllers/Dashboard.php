@@ -1,10 +1,15 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Dashboard extends CI_Controller {
+class Dashboard extends CI_Controller
+{
 
 	public function index()
 	{
-		$this->load->view('welcome_message.php');
+		$this->load->view('dashboard/templates/tp_header.php');
+		$this->load->view('dashboard/templates/tp_navbar.php');
+		$this->load->view('dashboard/templates/tp_sidebar.php');
+		$this->load->view('dashboard/dashboard.php');
+		$this->load->view('dashboard/templates/tp_footer.php');
 	}
 }

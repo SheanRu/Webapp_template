@@ -17,7 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | environments.
 |
 */
-$config['base_url'] = 'http://ci-starterkit.dev';
+$config['base_url'] = 'http://Webapp_template.test/';
 
 /*
 |--------------------------------------------------------------------------

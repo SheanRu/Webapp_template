@@ -1,0 +1,15 @@
+:root {
+  --white-color: #f2f2f2;
+  --black-color: #000;
+  --light-white-color: #f9f9f9;
+  --light-gray-color: #e5e5e5;
+  --border-color: #ccc;
+  --primary-color: #013d8d;
+  --secondary-color: #404040;
+  --overlay-dark-color: rgba(0, 0, 0, 0.6);
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --radius: 8px;
+  --shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}

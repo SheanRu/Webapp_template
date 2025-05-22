@@ -1,0 +1,54 @@
+@import url("/assets/css/dashboard/global.css");
+
+/* -----------------------------------------
+     Sidebar
+  ------------------------------------------ */
+.sidebar {
+  width: 220px;
+  background-color: var(--light-white-color);
+  border-right: 1px solid var(--border-color);
+  height: calc(100vh - 60px - 50px);
+  position: fixed;
+  top: 60px;
+  left: 0;
+  padding: var(--spacing-lg) var(--spacing-md);
+  transition: transform 0.3s ease;
+  z-index: 1001;
+  overflow-y: auto;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin: var(--spacing-sm) 0;
+}
+
+.sidebar a {
+  color: var(--black-color);
+  text-decoration: none;
+  padding: 0.6rem 1rem;
+  display: flex;
+  align-items: center;
+  border-radius: var(--radius);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.sidebar a i {
+  margin-right: 10px;
+  min-width: 20px;
+  text-align: center;
+}
+
+.sidebar a:hover {
+  background-color: var(--light-gray-color);
+  transform: translateX(5px);
+}
+
+.sidebar a.active {
+  background-color: var(--primary-color);
+  color: #fff;
+  font-weight: bold;
+}
+

@@ -1,0 +1,60 @@
+@import url("/assets/css/dashboard/global.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--white-color);
+  color: var(--black-color);
+  transition: background-color 0.4s, color 0.4s;
+}
+
+.main-content {
+  position: absolute;
+  top: 60px;
+  bottom: 50px;
+  left: 220px;
+  right: 0;
+  overflow-y: auto;
+  padding: var(--spacing-lg);
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 3px;
+}
+
+::-webkit-scrollbar-button {
+  background-color: #666;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 50px;
+  background-color: #666;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: #646464;
+}
+
+::-webkit-resizer {
+  background-color: #666;
+}
