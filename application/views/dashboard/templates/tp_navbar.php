@@ -1,16 +1,32 @@
   <!-- Navbar -->
   <nav class="navbar">
       <div class="nav-left">
-          <button id="hamburger" class="hamburger" aria-label="Toggle navigation">
-              ☰
+          <!-- Sidebar collapse toggle (desktop only) -->
+          <button
+              id="sidebarToggleBtn"
+              class="hamburger"
+              aria-label="Toggle sidebar"
+              title="Toggle sidebar">
+              <i class="fas fa-bars"></i>
           </button>
+
+          <!-- Sidebar open toggle for mobile -->
+          <button
+              id="mobileSidebarToggleBtn"
+              class="hamburger"
+              aria-label="Toggle sidebar mobile"
+              title="Toggle sidebar"
+              style="display: none">
+              <i class="fas fa-bars"></i>
+          </button>
+
           <img src="" alt="Logo" class="brand-logo" />
       </div>
       <div class="nav-right">
+          <button id="themeToggle" title="Toggle dark/light theme">🌙</button>
           <div class="admin-dropdown">
               <button class="admin-toggle" id="adminToggle">
-                  <span class="admin-label">Hi, <b>ADMIN</b> <i class="fa-solid fa-chevron-down"></i></span>
-                  <i class="fas fa-cog admin-icon"></i>
+                  Hi, <b>ADMIN</b> <i class="fa-solid fa-chevron-down"></i>
               </button>
               <ul class="dropdown-menu" id="dropdownMenu">
                   <li>

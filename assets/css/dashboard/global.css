@@ -1,6 +1,9 @@
 :root {
+  --sidebar-expanded-width: 220px;
+  --sidebar-collapsed-width: 70px;
   --white-color: #f2f2f2;
   --black-color: #000;
+  --dark-theme-bg:#1d1d1d;
   --light-white-color: #f9f9f9;
   --light-gray-color: #e5e5e5;
   --border-color: #e0e0e0;

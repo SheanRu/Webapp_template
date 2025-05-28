@@ -9,27 +9,62 @@
 html,
 body {
   height: 100%;
-  overflow: hidden;
-  scroll-behavior: smooth;
-}
-
-body {
   font-family: "Montserrat", sans-serif;
   background-color: var(--white-color);
   color: var(--black-color);
   transition: background-color 0.4s, color 0.4s;
+  overflow-x: hidden;
 }
 
+/* Dark theme affecting sidebar, navbar, footer */
+body.dark-theme .sidebar,
+body.dark-theme .navbar,
+body.dark-theme .footer {
+  background-color: var(--dark-theme-bg);
+  color: #ddd;
+  border-color: #333;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+body.dark-theme .sidebar a {
+  color: #bbb;
+}
+
+body.dark-theme .sidebar a.active,
+body.dark-theme .sidebar a:hover {
+  background-color: #3a3a5e;
+  color: #fff;
+}
+
+body.dark-theme .navbar button,
+body.dark-theme .navbar .admin-toggle {
+  color: #ddd;
+}
+body.dark-theme .navbar .admin-toggle:hover {
+  color: #fff;
+  background: none;
+}
+
+body.dark-theme .navbar .hamburger:hover{
+  background-color: #fff;
+  color: black;
+}
+
+body.dark-theme .footer {
+  color: #aaa;
+}
+
+/* Main content */
 .main-content {
-  position: absolute;
-  top: 60px;
-  bottom: 50px;
-  left: 220px;
-  right: 0;
-  overflow-y: auto;
-  padding: var(--spacing-lg);
-  background-color: var(--white-color);
-  color: var(--black-color);
+  margin-left: var(--sidebar-expanded-width);
+  padding: 2rem;
+  transition: margin-left 0.3s ease;
+  min-height: 100vh;
+  padding-top: 80px; /* to clear navbar */
+}
+
+.sidebar.collapsed ~ .main-content {
+  margin-left: var(--sidebar-collapsed-width);
 }
 
 ::-webkit-scrollbar {

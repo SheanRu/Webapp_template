@@ -3,67 +3,64 @@
 /* -----------------------------------------
      Overlay (for mobile sidebar)
   ------------------------------------------ */
+/* Scrollbar styling for sidebar */
+.sidebar::-webkit-scrollbar {
+  width: 8px;
+}
 
-.overlay {
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 4px;
+}
+
+/* Overlay for mobile sidebar */
+.sidebar-overlay {
   position: fixed;
-  top: 60px;
+  top: 0;
   left: 0;
-  width: 100%;
-  height: calc(100vh - 60px);
+  width: 100vw;
+  height: 100vh;
   background-color: var(--overlay-dark-color);
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease;
-  z-index: 999;
+  z-index: 1040;
 }
 
-.overlay.active {
+.sidebar-overlay.active {
   opacity: 1;
   visibility: visible;
 }
 
+/* Mobile responsive */
 @media (max-width: 768px) {
-  .hamburger {
-    display: inline-block;
+  .sidebar {
+    width: var(--sidebar-expanded-width);
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    padding-top: 70px;
   }
 
-  .sidebar {
-    transform: translateX(-100%);
-    position: fixed;
-    top: 60px;
-    left: 0;
-    width: 220px;
-    height: calc(100vh - 60px - 50px);
-    background-color: var(--light-white-color);
-    transition: transform 0.3s ease;
-    z-index: 1001;
+  .sidebar.collapsed {
+    width: var(--sidebar-expanded-width) !important;
   }
 
   .sidebar.active {
     transform: translateX(0);
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.3);
   }
-
   .main-content {
-    left: 0;
-    width: 100%;
-    padding: var(--spacing-md);
+    margin-left: 0;
+    padding: 1rem;
+    padding-top: 80px;
   }
 
-  .footer {
-    left: 0;
-    right: 0;
+  .hamburger {
+    display: inline-block;
   }
 
-  .brand-logo {
-    height: 40px;
-  }
-
-  .admin-label {
+  #sidebarToggleBtn {
     display: none;
-  }
-
-  .admin-icon {
-    display: inline;
-    font-size: 1.2rem;
   }
 }
