@@ -20,7 +20,7 @@
               <i class="fas fa-bars"></i>
           </button>
 
-          <img src="" alt="Logo" class="brand-logo" />
+          <img src="https://openclipart.org/image/800px/232064" alt="Logo" class="brand-logo" />
       </div>
       <div class="nav-right">
           <button id="themeToggle" title="Toggle dark/light theme">🌙</button>
@@ -29,9 +29,6 @@
                   Hi, <b>ADMIN</b> <i class="fa-solid fa-chevron-down"></i>
               </button>
               <ul class="dropdown-menu" id="dropdownMenu">
-                  <li>
-                      <a href="#"><i class="fas fa-user-cog"></i> Settings</a>
-                  </li>
                   <li>
                       <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
                   </li>

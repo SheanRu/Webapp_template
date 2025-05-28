@@ -55,13 +55,26 @@ if (adminToggle && dropdownMenu) {
   });
 }
 
-// Theme toggle
+window.addEventListener("DOMContentLoaded", () => {
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "dark") {
+    document.body.classList.add("dark-theme");
+    if (themeToggle) themeToggle.textContent = "☀️";
+  } else {
+    document.body.classList.remove("dark-theme");
+    if (themeToggle) themeToggle.textContent = "🌙";
+  }
+});
+
 if (themeToggle) {
   themeToggle.addEventListener("click", () => {
     document.body.classList.toggle("dark-theme");
-    themeToggle.textContent = document.body.classList.contains("dark-theme") ? "☀️" : "🌙";
+    const isDark = document.body.classList.contains("dark-theme");
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+    themeToggle.textContent = isDark ? "☀️" : "🌙";
   });
 }
+
 
 // Responsive behavior
 function handleResize() {

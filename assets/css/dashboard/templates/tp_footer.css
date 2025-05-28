@@ -19,3 +19,7 @@
   transition: background-color 0.4s, color 0.4s;
   z-index: 1100;
 }
+
+.footer-spacer {
+  height: 80px; 
+}

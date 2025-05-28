@@ -3,68 +3,67 @@
 /* -----------------------------------------
      Sidebar
   ------------------------------------------ */
-  .sidebar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        width: var(--sidebar-expanded-width);
-        background-color: var(--light-white-color);
-        border-right: 1px solid var(--border-color);
-        padding-top: 80px;
-        padding-left: 5px;
-        padding-right: 5px;
-        transition: width 0.3s ease, background-color 0.4s, color 0.4s;
-        overflow-y: auto;
-        z-index: 1050;
-      }
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: var(--sidebar-expanded-width);
+  background-color: var(--light-white-color);
+  border-right: 1px solid var(--border-color);
+  padding-top: 80px;
+  padding-left: 5px;
+  padding-right: 5px;
+  transition: width 0.3s ease, background-color 0.4s, color 0.4s;
+  overflow-y: auto;
+  z-index: 1050;
+}
 
-      .sidebar.collapsed {
-        width: var(--sidebar-collapsed-width);
-      }
+.sidebar.collapsed {
+  width: var(--sidebar-collapsed-width);
+}
 
-      .sidebar ul {
-        list-style: none;
-      }
+.sidebar ul {
+  list-style: none;
+}
 
-      .sidebar li {
-        margin: 0.5rem 0;
-      }
+.sidebar li {
+  margin: 0.5rem 0;
+}
 
-      .sidebar a {
-        color: var(--black-color);
-        text-decoration: none;
-        padding: 0.75rem 1rem;
-        display: flex;
-        align-items: center;
-        border-radius: var(--radius);
-        transition: background 0.3s, color 0.3s;
-        white-space: nowrap;
-        overflow: hidden;
-      }
+.sidebar a {
+  color: var(--black-color);
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  border-radius: var(--radius);
+  transition: background 0.3s, color 0.3s;
+  white-space: nowrap;
+  overflow: hidden;
+}
 
-      .sidebar a i {
-        min-width: 25px;
-        text-align: center;
-        font-size: 1.2rem;
-      }
+.sidebar a i {
+  min-width: 25px;
+  text-align: center;
+  font-size: 1.2rem;
+}
 
-      .sidebar a span {
-        margin-left: 10px;
-        transition: opacity 0.3s, visibility 0.3s;
-      }
+.sidebar a span {
+  margin-left: 10px;
+  transition: opacity 0.3s, visibility 0.3s;
+}
 
-      .sidebar.collapsed a span {
-        opacity: 0;
-        visibility: hidden;
-      }
+.sidebar.collapsed a span {
+  opacity: 0;
+  visibility: hidden;
+}
 
-      .sidebar a:hover {
-        background-color: var(--light-gray-color);
-      }
+.sidebar a:hover {
+  background-color: var(--light-gray-color);
+}
 
-      .sidebar a.active {
-        background-color: var(--primary-color);
-        color: #fff;
-      }
-
+.sidebar a.active {
+  background-color: var(--primary-color);
+  color: #fff;
+}

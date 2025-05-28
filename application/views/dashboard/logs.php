@@ -18,7 +18,7 @@
 
 <!-- Main Content -->
 <main class="main-content">
-  <h1>Logs</h1>
+  <h1  class="title">Logs</h1>
 
   <div class="example-wrapper">
     <div class="example-header" style="display: flex;text-align: right;justify-content: right;margin-bottom:20px;align-items: center;"> <span>Search:</span>

@@ -60,7 +60,7 @@ body.dark-theme .footer {
   padding: 2rem;
   transition: margin-left 0.3s ease;
   min-height: 100vh;
-  padding-top: 80px; /* to clear navbar */
+  padding-top: 80px;
 }
 
 .sidebar.collapsed ~ .main-content {
