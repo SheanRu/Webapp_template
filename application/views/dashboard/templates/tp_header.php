@@ -17,11 +17,16 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
+    <link rel="stylesheet" href="/assets/css/dashboard/templates/tp_loader.css">
     <link rel="stylesheet" href="/assets/css/dashboard/templates/tp_navbar.css">
     <link rel="stylesheet" href="/assets/css/dashboard/templates/tp_sidebar.css">
     <link rel="stylesheet" href="/assets/css/dashboard/templates/tp_maincontent.css">
     <link rel="stylesheet" href="/assets/css/dashboard/templates/tp_footer.css">
     <link rel="stylesheet" href="/assets/css/dashboard/templates/tp_overlay.css">
+    <style>
+    
+    </style>
 </head>
 
 <body>
+       

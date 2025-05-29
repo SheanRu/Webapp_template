@@ -20,7 +20,9 @@
               <i class="fas fa-bars"></i>
           </button>
 
-          <img src="https://openclipart.org/image/800px/232064" alt="Logo" class="brand-logo" />
+          <a href="/">
+              <img src="https://openclipart.org/image/800px/232064" alt="Logo" class="brand-logo" />
+          </a>
       </div>
       <div class="nav-right">
           <button id="themeToggle" title="Toggle dark/light theme">🌙</button>

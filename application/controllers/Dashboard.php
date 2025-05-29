@@ -6,6 +6,7 @@ class Dashboard extends CI_Controller
 
 	public function index()
 	{
+		$this->load->view('dashboard/templates/tp_loader.php');
 		$this->load->view('dashboard/templates/tp_header.php');
 		$this->load->view('dashboard/templates/tp_navbar.php');
 		$this->load->view('dashboard/templates/tp_sidebar.php');
@@ -14,6 +15,7 @@ class Dashboard extends CI_Controller
 	}
 	public function logs()
 	{
+		$this->load->view('dashboard/templates/tp_loader.php');
 		$this->load->view('dashboard/templates/tp_header.php');
 		$this->load->view('dashboard/templates/tp_navbar.php');
 		$this->load->view('dashboard/templates/tp_sidebar.php');
