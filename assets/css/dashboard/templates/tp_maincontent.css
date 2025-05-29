@@ -23,7 +23,6 @@ body.dark-theme .footer {
   background-color: var(--dark-theme-bg);
   color: #ddd;
   border-color: #333;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
 }
 
 body.dark-theme .sidebar a {
